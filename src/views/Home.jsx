@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getUserInfo } from '../utilities/auth.js'
+import { getUserInfo, isAuthenticated } from '../utilities/auth.js'
 import './Home.css'
 
 export const Home = () => {
@@ -28,9 +28,11 @@ export const Home = () => {
     }
 
     useEffect(() => {
-        fetchActivities()
-        fetchDocuments()
-        fetchAppointments()
+        if (isAuthenticated()) {
+            fetchActivities()
+            fetchDocuments()
+            fetchAppointments()
+        }
     }, [])
 
     return <article className='home'>
@@ -47,21 +49,24 @@ export const Home = () => {
                 Choosing Death & Money means choosing a partner who genuinely cares about your future. We pride ourselves on our client-focused approach, taking the time to understand your unique needs and goals. Our attorneys are not only skilled professionals but also empathetic advisors who are committed to providing you with the highest level of service. Trust us to handle your estate planning with the utmost care and professionalism.
             </section>
 
-            <section className='userinfo'>
-                <h2>Your Summary</h2>
-                <section className='activities__count'>
-                    <p>{activities.length} recent activities</p>
-                </section>
+            {
+                isAuthenticated()
+                    ? <section className='userinfo'>
+                        <h2>Your Summary</h2>
+                        <section className='activities__count'>
+                            <p>{activities.length} recent activities</p>
+                        </section>
 
-                <section className='documents__count'>
-                    <p>{documents.length} recent documents</p>
-                </section>
+                        <section className='documents__count'>
+                            <p>{documents.length} recent documents</p>
+                        </section>
 
-                <section className='appointments__count'>
-                    <p>{appointments.length} pending appointments</p>
-                </section>
-
-            </section>
+                        <section className='appointments__count'>
+                            <p>{appointments.length} pending appointments</p>
+                        </section>
+                    </section>
+                    : ""
+            }
         </div>
 
     </article>

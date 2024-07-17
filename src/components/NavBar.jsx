@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom"
+import { Link, NavLink, useNavigate } from "react-router-dom"
 import { isAuthenticated } from "../utilities/auth.js"
 import "./NavBar.css"
 
@@ -6,23 +6,23 @@ export const NavBar = () => {
     const navigate = useNavigate()
     return (
         <ul className="navbar">
-            <li className="navbar__item navbar__item--home">
-                <NavLink to={"/"}>💀 💰</NavLink>
+            <li className="navbar__item">
+                <Link to={"/"}>💀 💰</Link>
             </li>
             <li className="navbar__item">
-                <NavLink to={"/portal"}>Client Portal</NavLink>
+                <Link to={"/portal"}>Client Portal</Link>
             </li>
             <li className="navbar__item">
-                <NavLink to={"/appointments"}>Appointments</NavLink>
+                <Link to={"/testimonials"}>Testimonials</Link>
             </li>
             <li className="navbar__item">
-                <NavLink to={"/testimonials"}>Testimonials</NavLink>
+                <Link to={"/appointments"}>Appointments</Link>
             </li>
             <li className="navbar__item">
-                <NavLink to={"/faq"}>FAQ</NavLink>
+                <Link to={"/faq"}>FAQs</Link>
             </li>
             {
-                isAuthenticated ?
+                isAuthenticated() ?
                     <li className="navbar__item lastitem">
                         <button className="underline text-blue-600 hover:text-purple-700"
                             onClick={() => {
