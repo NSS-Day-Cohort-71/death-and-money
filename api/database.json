@@ -1,0 +1,319 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "password": "password123",
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "john@doe.com",
+            "roleId": 1
+        },
+        {
+            "id": 2,
+            "password": "password123",
+            "first_name": "Jane",
+            "last_name": "Smith",
+            "email": "jane@smith.com",
+            "roleId": 2
+        },
+        {
+            "id": 3,
+            "password": "Admin8*",
+            "first_name": "Steve",
+            "last_name": "Brownlee",
+            "email": "steve@stevebrownlee.com",
+            "roleId": 2
+        }
+    ],
+    "roles": [
+        {
+            "id": 1,
+            "name": "client"
+        },
+        {
+            "id": 2,
+            "name": "attorney"
+        }
+    ],
+    "activities": [
+        {
+            "id": 1,
+            "userId": 1,
+            "type": "document upload",
+            "description": "Uploaded last will and testament",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "type": "document upload",
+            "description": "Uploaded power of attorney",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "type": "document upload",
+            "description": "Uploaded living will",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "type": "document upload",
+            "description": "Uploaded health care proxy",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 5,
+            "userId": 1,
+            "type": "appointment",
+            "description": "Booked appointment with attorney",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 6,
+            "userId": 1,
+            "type": "appointment",
+            "description": "Booked appointment with attorney",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 7,
+            "userId": 1,
+            "type": "appointment",
+            "description": "Booked appointment with attorney",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 8,
+            "userId": 1,
+            "type": "appointment",
+            "description": "Booked appointment with attorney",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 9,
+            "userId": 1,
+            "type": "appointment",
+            "description": "Booked appointment with attorney",
+            "timestamp": "2024-07-15T10:00:00Z"
+        },
+        {
+            "id": 10,
+            "userId": 1,
+            "type": "review",
+            "description": "Rated attorney 5 stars",
+            "timestamp": "2024-07-15T10:00:00Z"
+        }
+    ],
+    "documents": [
+        {
+            "id": 1,
+            "userId": 1,
+            "name": "Last Will and Testament",
+            "type": "will",
+            "uploadDate": "2024-07-15",
+            "status": "submitted",
+            "attorneyId": 2
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "name": "Power of Attorney",
+            "type": "power of attorney",
+            "uploadDate": "2024-07-15",
+            "status": "submitted",
+            "attorneyId": 2
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "name": "Living Will",
+            "type": "living will",
+            "uploadDate": "2024-07-15",
+            "status": "submitted",
+            "attorneyId": 3
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "name": "Health Care Proxy",
+            "type": "health care proxy",
+            "uploadDate": "2024-07-15",
+            "status": "submitted",
+            "attorneyId": 3
+        }
+    ],
+    "faqs": [
+        {
+            "id": 1,
+            "question": "What is a will?",
+            "answer": "A will is a legal document that sets forth your wishes regarding the distribution of your property and the care of any minor children."
+        },
+        {
+            "id": 2,
+            "question": "What is a power of attorney?",
+            "answer": "A power of attorney is a legal document that gives someone you choose the power to act in your place."
+        },
+        {
+            "id": 3,
+            "question": "What is a living will?",
+            "answer": "A living will is a legal document that specifies the type of medical treatments you would and would not want to be used to keep you alive."
+        },
+        {
+            "id": 4,
+            "question": "What is a health care proxy?",
+            "answer": "A health care proxy is a legal document that allows you to appoint someone you trust to make health care decisions for you if you are unable to do so."
+        },
+        {
+            "id": 5,
+            "question": "What is the difference between a will and a living trust?",
+            "answer": "A will goes into effect only after you die, and is a legal document that directs who will receive your property after your death, and who will be in charge of your estate. A living trust, on the other hand, goes into effect as soon as you create it, and can help you manage your property while you are still alive."
+        },
+        {
+            "id": 6,
+            "question": "What is the difference between a will and a living will?",
+            "answer": "A will is a legal document that sets forth your wishes regarding the distribution of your property and the care of any minor children. A living will is a legal document that specifies the type of medical treatments you would and would not want to be used to keep you alive."
+        },
+        {
+            "id": 7,
+            "question": "What is the difference between a will and a trust?",
+            "answer": "A will goes into effect only after you die, and is a legal document that directs who will receive your property after your death, and who will be in charge of your estate. A trust, on the other hand, goes into effect as soon as you create it, and can help you manage your property while you are still alive."
+        },
+        {
+            "id": 8,
+            "question": "What is the difference between a will and a power of attorney?",
+            "answer": "A will is a legal document that sets forth your wishes regarding the distribution of your property and the care of any minor children. A power of attorney is a legal document that gives someone you choose the power to act in your place."
+        },
+        {
+            "id": 9,
+            "question": "What is the difference between a will and a living trust?",
+            "answer": "A will goes into effect only after you die, and is a legal document that directs who will receive your property after your death, and who will be in charge of your estate. A living trust, on the other hand, goes into effect as soon as you create it, and can help you manage your property while you are still alive."
+        },
+        {
+            "id": 10,
+            "question": "What is the difference between a will and a living will?",
+            "answer": "A will is a legal document that sets forth your wishes regarding the distribution of your property and the care of any minor children. A living will is a legal document that specifies the type of medical treatments you would and would not want to be used to keep you alive."
+        },
+        {
+            "id": 11,
+            "question": "What is the difference between a will and a trust?",
+            "answer": "A will goes into effect only after you die, and is a legal document that directs"
+        }
+    ],
+    "appointments": [
+        {
+            "id": 1,
+            "userId": 1,
+            "attorneyId": 2,
+            "date": "2024-07-20",
+            "time": "10:00",
+            "status": "booked"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "attorneyId": 2,
+            "date": "2024-07-22",
+            "time": "11:00",
+            "status": "booked"
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "attorneyId": 3,
+            "date": "2024-07-24",
+            "time": "12:00",
+            "status": "booked"
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "attorneyId": 3,
+            "date": "2024-07-26",
+            "time": "13:00",
+            "status": "pending"
+        },
+        {
+            "id": 5,
+            "userId": 1,
+            "attorneyId": 2,
+            "date": "2024-07-28",
+            "time": "14:00",
+            "status": "pending"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Excellent service and very professional.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "rating": 4,
+            "comment": "Great experience overall.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Very knowledgeable and helpful.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "rating": 4,
+            "comment": "Highly recommend.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 5,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Professional and courteous.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 6,
+            "userId": 1,
+            "rating": 4,
+            "comment": "Very satisfied with the service.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 7,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Would definitely use again.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 8,
+            "userId": 1,
+            "rating": 4,
+            "comment": "Great experience overall.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 9,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Very knowledgeable and helpful.",
+            "date": "2024-07-15"
+        },
+        {
+            "id": 10,
+            "userId": 1,
+            "rating": 4,
+            "comment": "Highly recommend.",
+            "date": "2024-07-15"
+        }
+    ]
+}

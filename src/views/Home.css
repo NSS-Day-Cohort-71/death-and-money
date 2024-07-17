@@ -1,0 +1,15 @@
+.home__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4em;
+    font-size: 1.2em;
+}
+
+.company {
+    flex: 3
+}
+
+.userinfo {
+    flex: 1
+}
